@@ -1,0 +1,18 @@
+{
+	"name": "ls_bsdev",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureBlobStorage",
+		"typeProperties": {
+			"connectionString": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "ls_kvdev",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "sec-bsdev-connectionstring"
+			}
+		}
+	}
+}

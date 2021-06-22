@@ -1,0 +1,11 @@
+{
+	"name": "ls_kvdev",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureKeyVault",
+		"typeProperties": {
+			"baseUrl": "https://AKV-Practice-DEV.vault.azure.net/"
+		}
+	}
+}
